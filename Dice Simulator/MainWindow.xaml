@@ -7,6 +7,25 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        
+        
+        <TextBlock  Margin="10,10,10,10" TextWrapping="Wrap" Text="Dice Simulator"  Grid.ColumnSpan="2" Height="60" Width="497" FontSize="48" TextAlignment="Center"/>
+        
+        <Button Content="1 Dice" HorizontalAlignment="Center" Height="177"  Grid.Row="1" VerticalAlignment="Center" Width="206"/>
+        <Button Content="2 Dice" HorizontalAlignment="Center" Height="177"  Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Width="206"/>
+
+        <!--http://www.animatedimages.org/img-animated-dice-image-0064-120764.htm-->
+        <!--https://upload.wikimedia.org/wikipedia/commons/4/4c/Dice.png-->
+        <!--https://www.freeonlinedice.com/-->
         
     </Grid>
 </Window>
