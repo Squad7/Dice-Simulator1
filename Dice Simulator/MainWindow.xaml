@@ -16,16 +16,45 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
+
+
+        <Viewbox Grid.ColumnSpan="2">
+            <TextBlock  Margin="10,5,10,15" TextWrapping="Wrap" Text="Dice Simulator"  Grid.ColumnSpan="2" FontSize="48" TextAlignment="Center"/>
+        </Viewbox>
         
-        
-        <TextBlock  Margin="10,10,10,10" TextWrapping="Wrap" Text="Dice Simulator"  Grid.ColumnSpan="2" Height="60" Width="497" FontSize="48" TextAlignment="Center"/>
-        
-        <Button Content="1 Dice" HorizontalAlignment="Center" Height="177"  Grid.Row="1" VerticalAlignment="Center" Width="206"/>
-        <Button Content="2 Dice" HorizontalAlignment="Center" Height="177"  Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Width="206"/>
+
+        <Button x:Name="DiceButton1"  Margin="30"  Grid.Row="1"  Click="Button_Click" FontWeight="Bold" FontSize="48">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+                <Viewbox>
+                    <TextBlock Grid.Row="0" Text="1 Dice"/>
+                </Viewbox>
+                <Image Grid.Row="1" Source="Resources/1 Dice Main Screen 2.png" />
+            </Grid>
+            
+        </Button>
+        <Button x:Name="DiceButton2" Margin="30" Grid.Row="1" Grid.Column="1" FontWeight="Bold" FontSize="48">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+                <Viewbox>
+                    <TextBlock Grid.Row="0" Text="2 Dice"/>
+                </Viewbox>                
+                <Image Grid.Row="1" Source="Resources/2 Dice Main Screen.png" />
+            </Grid>
+        </Button>
 
         <!--http://www.animatedimages.org/img-animated-dice-image-0064-120764.htm-->
         <!--https://upload.wikimedia.org/wikipedia/commons/4/4c/Dice.png-->
         <!--https://www.freeonlinedice.com/-->
-        
+
+        <Frame x:Name="MainFrame" Grid.Row="1" Grid.ColumnSpan="2"  />
+
+
     </Grid>
 </Window>

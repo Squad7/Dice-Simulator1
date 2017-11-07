@@ -5,8 +5,8 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Dice_Simulator"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
-      Title="Dice_2">
+      d:DesignHeight="239" d:DesignWidth="525"
+      Title="Dice_2" Background="#FF0E5FEE">
 
     <Grid>
         
