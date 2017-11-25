@@ -6,9 +6,53 @@
       xmlns:local="clr-namespace:Dice_Simulator"
       mc:Ignorable="d" 
       d:DesignHeight="239" d:DesignWidth="525"
-      Title="Dice_2" Background="#FF0E5FEE">
+      Title="Dice_2" Background="White">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1.5*" />
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Viewbox Grid.Column="0" Grid.Row="0">
+            <Button x:Name="Roll2" Content="Dice 1 ROLL"  Width="40" Height="15" Click="Roll2_Click_1" FontWeight="Bold" FontSize="6" />
+        </Viewbox>
+
+        <Viewbox Grid.Row="1" Grid.Column="0">
+            <Button x:Name="Roll2_2" Content="Dice 2 ROLL" Width="40" Height="15" Click="Roll2_2_Click"  FontWeight="Bold" FontSize="6"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="0" Grid.Column="2">
+            <TextBlock x:Name="Dice1Answer"  Text=""  Height="20" Width="20" FontSize="14" TextAlignment="Center" FontWeight="Bold"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="1" Grid.Column="2">
+            <TextBlock x:Name="Dice2Answer"  Text=""  Height="20" Width="20" FontSize="14" TextAlignment="Center" FontWeight="Bold"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="2" Grid.Column="1">
+            <Button x:Name="TotalButton" Content="TOTAL =" Width="30" Height="10" Click="TotalButton_Click"  FontWeight="Bold" FontSize="5"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="2" Grid.Column="2">
+            <TextBlock x:Name="TotalTextBlock"  Text=""  Height="20" Width="20" FontSize="14" TextAlignment="Center" FontWeight="Bold"/>
+        </Viewbox>
+
+        <Viewbox Grid.Column="1" Grid.Row="1" HorizontalAlignment="Right">
+            <Image x:Name="DiceResultIMG22" Height="40" Width="40" />
+        </Viewbox>
+
+        <Viewbox Grid.Column="1" Grid.Row="0" HorizontalAlignment="Right">
+            <Image x:Name="DiceResultIMG21" Height="40" Width="40" />
+        </Viewbox>
+
     </Grid>
 </Page>

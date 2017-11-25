@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Dice_Simulator
 {
     /// <summary>
@@ -25,9 +26,30 @@ namespace Dice_Simulator
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        //Changes MainFrame to the Dice 1 page & Displays BackButton
+        private void DiceButton1_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Content = new Dice_1();
+            BackButton.Visibility = Visibility;
+            MainFrame.Visibility = Visibility.Visible;
+            
         }
+
+        //Changes MainFrame to the Dice 2 page & Displays BackButton
+        private void DiceButton2_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new Dice_2();
+            BackButton.Visibility = Visibility;
+            MainFrame.Visibility = Visibility.Visible;
+
+        }
+
+        //Changes MainFrame back to landing page
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Visibility = Visibility;
+            MainFrame.Visibility = Visibility.Hidden;
+        }
+
     }
 }

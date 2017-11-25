@@ -116,5 +116,13 @@
   <ItemGroup>
     <Resource Include="Resources\1 Dice Main Screen 2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Dice num 1.png" />
+    <Resource Include="Resources\Dice num 2.png" />
+    <Resource Include="Resources\Dice num 3.png" />
+    <Resource Include="Resources\Dice num 4.png" />
+    <Resource Include="Resources\Dice num 5.png" />
+    <Resource Include="Resources\Dice num 6.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
